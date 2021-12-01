@@ -18,25 +18,107 @@
 
 <link rel="stylesheet" type="text/css" href="TBLbreadcrumbs.css"/>
 
+<style>
+    .dropbtn {
+      background-color: black;
+      color: white;
+      padding: 10px 10px;
+      font-size: 16px;
+      border: none;
+      font-weight: bold;
+    }
+    
+    .dropdown {
+      position: sticky;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+
+        display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      z-index: 1;
+      border: none;
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown-content a:hover {background-color: #222222;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #f1f1f1;}
+    </style>
+
 </head>
  
 <body>
 
-
-
-
-
 <div id="container">
-<div id="header"><img src="TBlimages/smalltimbernerslee.jpg" height="131" width="200" align="left" alt="Tim Berners-Lee"/><h1 style="position:relative; top:30px">Tim Berners-Lee</h1></div>
- <div id="menu">
- <ul>
- <li><a href="home.html">Home</a></li>
- <li><a href="inventor.html">Inventor</a></li>
+<div id="header"><h1 style="position:relative; top:30px">Mental Health and COVID-19</h1></div>
  
- <li><a href="futureoftheinternet.html">Future of the Internet</a></li>
-<li><a href="glossary.html">Glossary</a></li>
+<div id="menu" style="background-color: black;">
+ <ul>
+    <li> <div class="dropdown">
+        <button class="dropbtn" onclick="window.location.href = 'home.html';">Home</button>
+      </div> </li>
 
-<li><a href="workcited.html">Works Cited</a></li>
+      <li> <div class="dropdown">
+        <button class="dropbtn" onclick="window.location.href = 'immediateEffects/socialRestrictions.html';">Immediate Effects</button>
+        <div class="dropdown-content">
+          <a href="immediateEffects/jobLoss.html">Loss of In-Person Jobs</a>
+          <a href="immediateEffects/schoolClosure.html">Closure of Schools and Colleges</a>
+          <a href="immediateEffects/socialRestrictions.html">Restrictions on Social Gatherings</a>
+          <a href="immediateEffects/uncertainty.html">Uncertainty Regarding Prognosis of Pandemic</a>
+        </div>
+      </div> </li>
+
+ <li> <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href = 'generalEffects/mentalhealth.html';">General Mental Health Effects</button>
+    <div class="dropdown-content">
+      <a href="generalEffects/mentalhealth.html">Defining Mental Health</a>
+      <a href="generalEffects/isolation.html">Isolation due to Fear of COVID</a>
+      <a href="generalEffects/anxiety.html">Widespread Depression and Anxiety</a>
+      <a href="generalEffects/sanitation.html">Excessive Use of Sanitation Products</a>
+      <a href="generalEffects/hysteria.html">Mass Hysteria</a>
+    </div>
+  </div> </li>
+  
+  <li> <div class="dropdown">
+    <button class="dropbtn">Effects by Demographic</button>
+    <div class="dropdown-content">
+      <a href="demographics/race.html">Effects by Race/Ethnicity</a>
+      <a href="demographics/children.html">Effects on Children/Students</a>
+      <a href="demographics/adults.html">Effects on Adults</a>
+      <a href="demographics/elderly.html">Effects on Elderly</a>
+    </div>
+  </div> </li>
+
+ <li> <div class="dropdown">
+    <button class="dropbtn">Solutions</button>
+    <div class="dropdown-content">
+      <a href="solutions/identifying.html">Identifying Issues</a>
+      <a href="solutions/professionalhelp.html">Getting Professional Help</a>
+      <a href="solutions/advice.html">Advice From Professionals</a>
+    </div>
+  </div> </li>
+
+  <li> <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href = 'glossary.html';">Glossary</button>
+  </div> </li>
+
+  <li> <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href = 'workscited.html';">Works Cited</button>
+  </div> </li>
+
  
 </ul>
 </div>
@@ -46,10 +128,22 @@
 
 
 <h4>Introduction to COVID-19</h4>
-<p>The life of Tim Berners-Lee is one that few people know about.  He is the scientist and inventor who was in the right place at the right time&mdash;at the CERN laboratory in Switzerland in the 1980s&mdash;to both 
-invent the basic technologies and shape the culture that served as the seed crystal for the Internet as we know it today.  Other than the researcher's salary that he was receiving at the time, he never asked for any money for his
-inventions, nor did he patent any of them.  Instead, he shared them so others could improve on his work, and as a result the Internet has evolved into what it is today.  We all know who Bill Gates is and we also know what Steve Jobs 
-gave us; they produced the software and personal computers that we use to connect to the <a href="glossary.html#link9">Internet</a>. However, they did not "invent" the Internet.</p> 
+<p>In late 2019, the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV2), the virus that causes
+    the Coronavirus Disease 2019 (COVID-19), originated and began spreading around the globe.  By March 2020,
+    many countries across the world had issued quarantine orders and mandated social distancing, closed
+    their national borders, and banned most outbound travel in an effort to slow the spread of the virus.
+    These closures and mandates persisted throughout the remainder of 2020 and the majority of 2021 and
+    resulted in drastic changes in lifestyle for the majority of society over a 18 month period. Debilitating
+    financial issues arose with the initial closures as many businesses closed, causing stocks to plummet in
+    response to widespread panic and disruptions to the supply chain that persisted long after the inciting
+    incident.  Schools and colleges worldwide also shut down completely and shifted to online instruction. 
+    The disease itself spread fairly rapidly despite social distancing and increased hygiene, and the virus has 
+    killed almost five million people worldwide as of today.  Simultaneously, the pandemic led to drastic declines 
+    in mental health in many individuals, and helping to address the causes of the issues and how individuals can 
+    improve their mental health should be made a priority in returning to normal.  This site will focus on the 
+    specific reasons caused or exacerbated by the pandemic that people may be feeling more anxiety and depression, 
+    potential solutions related to each issue and general mental health help, and plan to improve society&apos;s 
+    response in future pandemics.</p> 
 
 
 <p class="block" style="position:relative; top:20px;"><a href="inventor.html">Inventor</a>&nbsp;&nbsp;&nbsp;&nbsp; Tim Berners-Lee invented HTML; URIs, which eventually became URLs; browsers; the first server; and HTTP protocols; but he had a problem with patents.</p> 
