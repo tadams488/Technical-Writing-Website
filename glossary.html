@@ -10,10 +10,116 @@
 
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-</head> 
+<link rel="stylesheet" type="text/css" href="TBLbreadcrumbs.css"/>
+
+<style>
+    .dropbtn {
+      background-color: black;
+      color: white;
+      padding: 10px 10px;
+      font-size: 16px;
+      border: none;
+      font-weight: bold;
+    }
+    
+    .dropdown {
+      position: sticky;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+
+        display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      z-index: 1;
+      border: none;
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown-content a:hover {background-color: #222222;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #f1f1f1;}
+    </style>
+
+</head>
 
 
 <body>
+
+    <div id="container">
+        <div id="header"><h1 style="position:relative; top:30px">Mental Health and COVID-19</h1></div>
+         
+        <div id="menu" style="background-color: black;">
+         <ul>
+            <li> <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href = 'home.html';">Home</button>
+              </div> </li>
+        
+              <li> <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href = 'immediateEffects/socialRestrictions.html';">Immediate Effects</button>
+                <div class="dropdown-content">
+                  <a href="immediateEffects/jobLoss.html">Loss of In-Person Jobs</a>
+                  <a href="immediateEffects/schoolClosure.html">Closure of Schools and Colleges</a>
+                  <a href="immediateEffects/socialRestrictions.html">Restrictions on Social Gatherings</a>
+                  <a href="immediateEffects/uncertainty.html">Uncertainty Regarding Prognosis of Pandemic</a>
+                </div>
+              </div> </li>
+        
+         <li> <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href = 'generalEffects/mentalhealth.html';">General Mental Health Effects</button>
+            <div class="dropdown-content">
+              <a href="generalEffects/mentalhealth.html">Defining Mental Health</a>
+              <a href="generalEffects/isolation.html">Isolation due to Fear of COVID</a>
+              <a href="generalEffects/anxiety.html">Widespread Depression and Anxiety</a>
+              <a href="generalEffects/sanitation.html">Excessive Use of Sanitation Products</a>
+              <a href="generalEffects/hysteria.html">Mass Hysteria</a>
+            </div>
+          </div> </li>
+          
+          <li> <div class="dropdown">
+            <button class="dropbtn">Effects by Demographic</button>
+            <div class="dropdown-content">
+              <a href="demographics/race.html">Effects by Race/Ethnicity</a>
+              <a href="demographics/children.html">Effects on Children/Students</a>
+              <a href="demographics/adults.html">Effects on Adults</a>
+              <a href="demographics/elderly.html">Effects on Elderly</a>
+            </div>
+          </div> </li>
+        
+         <li> <div class="dropdown">
+            <button class="dropbtn">Solutions</button>
+            <div class="dropdown-content">
+              <a href="solutions/identifying.html">Identifying Issues</a>
+              <a href="solutions/professionalhelp.html">Getting Professional Help</a>
+              <a href="solutions/advice.html">Advice From Professionals</a>
+            </div>
+          </div> </li>
+        
+          <li> <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href = 'glossary.html';">Glossary</button>
+          </div> </li>
+        
+          <li> <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href = 'workscited.html';">Works Cited</button>
+          </div> </li>
+        
+         
+        </ul>
+        </div>
+        
+        
+        <div id="main-content">
 
 
 <h3>Glossary and Commentary</h3>
@@ -24,45 +130,49 @@
 <p><a name="comorbitdity_def"><b>Comorbidity</b></a>- describes when a person has two or more disorders or illnesses at the same time.  Specifically, it often describes when the disorders or illnesses worsen the course of the other, or when having one makes it much more likely to contract the other.  Many mental illnesses show comorbidities, such as anxiety and depression or substance use disorders and mental disorders in general.  Schizophrenia is also comorbid with both mental and substance use disorders.
 </p>
 
-<p><a name="germaphobia_def"><b>Germaphobia</b>- is the acute and excessive fear of germs, disease, viruses, parasites, and/or bacteria.  The anxieties around the germs or disease often outweigh the actual damage the disease would cause, which can lead to the person taking great lengths to avoid contamination.  Germaphobia can manifest as intense fear or terror, thoughts of germ exposure resulting in negative consequences, or feeling powerless to control a fear of germs that you realize is excessive or irrational.  Those affected may spend an excessive amount of time thinking about germs or avoiding situations that involve germs and notice difficulty functioning at work or at home.  The physical symptoms manifest similarly to anxiety disorders, such as rapid heartbeat, shortness of breath, chest pain, muscle tension, restlessness, and difficulty relaxing.</a>
+<p><a name="germaphobia_def"><b>Germaphobia</b></a>- is the acute and excessive fear of germs, disease, viruses, parasites, and/or bacteria.  The anxieties around the germs or disease often outweigh the actual damage the disease would cause, which can lead to the person taking great lengths to avoid contamination.  Germaphobia can manifest as intense fear or terror, thoughts of germ exposure resulting in negative consequences, or feeling powerless to control a fear of germs that you realize is excessive or irrational.  Those affected may spend an excessive amount of time thinking about germs or avoiding situations that involve germs and notice difficulty functioning at work or at home.  The physical symptoms manifest similarly to anxiety disorders, such as rapid heartbeat, shortness of breath, chest pain, muscle tension, restlessness, and difficulty relaxing.</a>
 </p>
 
-<p><a name="oversanitation_def"><b>Oversanitation</b>- is the term for the modern trend of attempting to eliminate all germs and disease vectors from our lives, done via excessive handwashing, strong sanitization chemicals, and avoiding dirt and dust to a compulsive level.  This has been associated with negative consequences, such as imbalance in our gut microbiome, which is the ecosystem of bacteria that helps our digestive and immune systems, and susceptibility to illness later in life.  It has been found that some exposure to germs is important to build our immune systems and create a balanced microbiome, so the overuse of sanitization products can cause negative effects down the line.</a>
+<p><a name="oversanitation_def"><b>Oversanitation</b></a>- is the term for the modern trend of attempting to eliminate all germs and disease vectors from our lives, done via excessive handwashing, strong sanitization chemicals, and avoiding dirt and dust to a compulsive level.  This has been associated with negative consequences, such as imbalance in our gut microbiome, which is the ecosystem of bacteria that helps our digestive and immune systems, and susceptibility to illness later in life.  It has been found that some exposure to germs is important to build our immune systems and create a balanced microbiome, so the overuse of sanitization products can cause negative effects down the line.</a>
 </p>
 
-<p><a name="hybrid_employee_def"><b>Hybrid Employee</b>- is the term used for employees going back to work in offices that used to be completely in-person but will now work in-person some of the time and online some of the time.  For some businesses this acts as an intermediate period while their workforce is transferring from fully online to fully in-person, but for other businesses this has become the status quo, and is even seen as a benefit for some employees.
+<p><a name="hybrid_employee_def"><b>Hybrid Employee</b></a>- is the term used for employees going back to work in offices that used to be completely in-person but will now work in-person some of the time and online some of the time.  For some businesses this acts as an intermediate period while their workforce is transferring from fully online to fully in-person, but for other businesses this has become the status quo, and is even seen as a benefit for some employees.
 </a>
 </p>
 
-<p><a name="cryptic_transmission_def"><b>Cryptic Transmission</b>- is the undetected transmission of a virus due to the transmitter appearing asymptomatic when interacting with others.</a>
+<p><a name="cryptic_transmission_def"><b>Cryptic Transmission</b></a>- is the undetected transmission of a virus due to the transmitter appearing asymptomatic when interacting with others.</a>
 </p>
 
-<p><a name="genetic_vulnerability_def"><b>Genetic Vulnerability</b>- is when an individual possesses certain genes that make them more susceptible to some sort of disease or condition, either physical or mental. It was (and still is) believed by many physicians that black and indigenous people generally have a higher genetic vulnerability to certain viruses and chronic diseases compared to white people.</a>
+<p><a name="genetic_vulnerability_def"><b>Genetic Vulnerability</b></a>- is when an individual possesses certain genes that make them more susceptible to some sort of disease or condition, either physical or mental. It was (and still is) believed by many physicians that black and indigenous people generally have a higher genetic vulnerability to certain viruses and chronic diseases compared to white people.</a>
 </p>
 
-<p><a name="mortality_rate_def"><b>Mortality Rate</b>- the number of deaths a certain population experiences per a constant amount of people in the population (x / 100,000 people in this paper).</a>
+<p><a name="mortality_rate_def"><b>Mortality Rate</b></a>- the number of deaths a certain population experiences per a constant amount of people in the population (x / 100,000 people in this paper).</a>
 </p>
 
-<p><a name="white_collar_workers_def"><b>White-collar Workers</b>- suit-and-tie workers typically in an office who normally work in the service industry, while blue-collar workers typically engage in manual labor.</a>
+<p><a name="white_collar_workers_def"><b>White-collar Workers</b></a>- suit-and-tie workers typically in an office who normally work in the service industry, while blue-collar workers typically engage in manual labor.</a>
 </p>
 
-<p><a name="modality_def"><b>Modality</b>- a particular mode in which something is experienced. Some examples of learning modalities are in-person, online, and hybrid modalities.</a>
+<p><a name="modality_def"><b>Modality</b></a>- a particular mode in which something is experienced. Some examples of learning modalities are in-person, online, and hybrid modalities.</a>
 </p>
 
-<p><a name="prognosis_def"><b>Prognosis</b>- a prediction for the outcome for a medical condition.</a>
+<p><a name="prognosis_def"><b>Prognosis</b></a>- a prediction for the outcome for a medical condition.</a>
 </p>
 
-<p><a name="supply_chain_def"><b>Supply Chain</b>- the network of raw material suppliers that provide manufacturers the resources required to create products.</a>
+<p><a name="supply_chain_def"><b>Supply Chain</b></a>- the network of raw material suppliers that provide manufacturers the resources required to create products.</a>
 </p>
 
-<p><a name="mental_health_def"><b>Mental Health</b>- is the state of mind which allows one to cope with everyday stressors and overcome hardship.</a>
+<p><a name="mental_health_def"><b>Mental Health</b></a>- is the state of mind which allows one to cope with everyday stressors and overcome hardship.</a>
 </p>
 
-<p><a name="economic_recession_def"><b>Economic Recession</b>- a period in which economic activity decreases; it typically involves a high rate of unemployment, fewer investments, and lower consumer demand.</a>
+<p><a name="economic_recession_def"><b>Economic Recession</b></a>- a period in which economic activity decreases; it typically involves a high rate of unemployment, fewer investments, and lower consumer demand.</a>
 </p>
 
-<p><a name="unemployment_rate_def"><b>Unemployment Rate</b>- the number of individuals who are able to work but do not have a job divided by the number of individuals in the labor force, which consists of working individuals and able individuals who do not have a job, as a percentage.</a>
+<p><a name="unemployment_rate_def"><b>Unemployment Rate</b></a>- the number of individuals who are able to work but do not have a job divided by the number of individuals in the labor force, which consists of working individuals and able individuals who do not have a job, as a percentage.</a>
 </p>
+
+        </div>
+
+    </div>
 
 </body>
 
