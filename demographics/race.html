@@ -1,12 +1,151 @@
 <html>
 <head>
 <title> Effects by Race/Ethnicity </title>
+
+<link rel="stylesheet" type="text/css" href="../TBLbreadcrumbs.css"/>
+
+<style>
+    .dropbtn {
+      background-color: black;
+      color: white;
+      padding: 10px 10px;
+      font-size: 16px;
+      border: none;
+      font-weight: bold;
+    }
+    
+    .dropdown {
+      position: sticky;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+
+        display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      z-index: 1;
+      border: none;
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown-content a:hover {background-color: #222222;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #f1f1f1;}
+    </style>
+
 </head>
+ 
 <body>
 
-<p>The effects of the pandemic also appear to be amplified or reduced depending on race. Figure 2.3a below shows that the COVID-19 mortality rate per 100,000 people was generally greater in people of indigenous, black, Pacific Islander, or Hispanic/Latinx descent than white and Asian Americans from December 2020 to March 2021 (Clary & Liao, 2021). </p>
+<div id="container">
 
-<h2> Figure 2.3a </h2>
+<div id="header"><h1 style="position:relative; top:30px">Mental Health and COVID-19</h1></div>
+ 
+<div id="menu" style="background-color: black;">
+ <ul>
+    <li> <div class="dropdown">
+        <button class="dropbtn" onclick="window.location.href = '../home.html';">Home</button>
+      </div> </li>
+
+      <li> <div class="dropdown">
+        <button class="dropbtn" onclick="window.location.href = '../immediateEffects/socialRestrictions.html';">Immediate Effects</button>
+        <div class="dropdown-content">
+          <a href="../immediateEffects/jobLoss.html">Loss of In-Person Jobs</a>
+          <a href="../immediateEffects/schoolClosure.html">Closure of Schools and Colleges</a>
+          <a href="../immediateEffects/socialRestrictions.html">Restrictions on Social Gatherings</a>
+          <a href="../immediateEffects/uncertainty.html">Uncertainty Regarding Prognosis of Pandemic</a>
+        </div>
+      </div> </li>
+
+ <li> <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href = '../generalEffects/mentalhealth.html';">General Mental Health Effects</button>
+    <div class="dropdown-content">
+      <a href="../generalEffects/mentalhealth.html">Defining Mental Health</a>
+      <a href="../generalEffects/isolation.html">Isolation due to Fear of COVID</a>
+      <a href="../generalEffects/anxiety.html">Widespread Depression and Anxiety</a>
+      <a href="../generalEffects/sanitation.html">Excessive Use of Sanitation Products</a>
+      <a href="../generalEffects/hysteria.html">Mass Hysteria</a>
+    </div>
+  </div> </li>
+  
+  <li> <div class="dropdown">
+    <button class="dropbtn">Effects by Demographic</button>
+    <div class="dropdown-content">
+      <a href="../demographics/race.html">Effects by Race/Ethnicity</a>
+      <a href="../demographics/children.html">Effects on Children/Students</a>
+      <a href="../demographics/adults.html">Effects on Adults</a>
+      <a href="../demographics/elderly.html">Effects on Elderly</a>
+    </div>
+  </div> </li>
+
+ <li> <div class="dropdown">
+    <button class="dropbtn">Solutions</button>
+    <div class="dropdown-content">
+      <a href="../solutions/identifying.html">Identifying Issues</a>
+      <a href="../solutions/professionalhelp.html">Getting Professional Help</a>
+      <a href="../solutions/advice.html">Advice From Professionals</a>
+    </div>
+  </div> </li>
+
+  <li> <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href = '../glossary.html';">Glossary</button>
+  </div> </li>
+
+  <li> <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href = '../workscited.html';">Works Cited</button>
+  </div> </li>
+
+ 
+</ul>
+</div>
+
+
+<div id="main-content">
+
+    <h4 style="text-align: center;">Effects by Race/Ethnicity</h4>
+
+        <p style="text-align: center;">The effects of the pandemic also appear to be amplified or reduced depending on race. 
+            <a href="#figure2.3a">Figure 2.3a</a> below shows that the COVID-19 mortality rate per 100,000 people was generally 
+            greater in people of indigenous, black, Pacific Islander, or Hispanic/Latinx descent than white 
+            and Asian Americans from December 2020 to March 2021 <a href="../workscited.html">(Clary & Liao, 2021)</a>. </p>
+
+
+            <h3 style="text-align: center;"> Figure 2.3a </h3>
+
+            <p style="text-align: center;"><a name="figure2.3a"><img src="../images/image7.png" style="width: 700; height: 345;"> </a></p>
+        </div>
+
+        <p style="text-align: center;">This isn’t the first disease to have varied impacts depending on race.
+             In fact, several common diseases such as influenza, diabetes mellitus, and hypertension all seem 
+             to disproportionately affect certain demographics. Many medical professionals believe that these 
+             discrepancies can be attributed to innate vulnerabilities in certain races. It was found that 23 
+             percent of medical students believed and endorsed baseless claims about racial variations in the 
+             human anatomy, including that white people are less susceptible to heart disease than black people, 
+             that white people have larger brains than black people, and that black people have thicker skin 
+             than white people (Hall et al., 2015). </p>
+
+        <p style="text-align: center;">However, if these claims about the link between racial disparities in mortality rates and genetic 
+            vulnerability were true, there’d at least be some sort of variety by disease as to which races are the 
+            most vulnerable, seeing as how it wouldn’t make sense for the same few groups to be constantly targeted 
+            by a plethora of diverse conditions. However, in all cases, there is no variation in which groups are 
+            especially affected, as people of black or indigenous descent always exhibited higher mortality rates 
+            than those of white or Asian descent. Additionally, a similar skewing of the COVID-19 mortality rate can 
+            be seen in Figure 2.3b below, which shows that 67.5 percent of the coronavirus-related deaths between March 
+            and September 2020 were of people from households below the United States’ median income (Health Affairs [HA], 2021).</p>
+
+</div>
+
 </body>
 
 </html>
